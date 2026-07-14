@@ -9,16 +9,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#1c1712;
-    --paper:#e8e0cd;
-    --paper-soft:#f1ebdc;
-    --walnut:#241a10;
-    --walnut-deep:#150e08;
-    --oak:#5b4128;
-    --brass:#a9823d;
-    --brass-soft:#c9a866;
-    --line:#c9bfa9;
-    --line-dark:#4a3b28;
+    --ink:#20241f;
+    --paper:#f4f2ea;
+    --paper-soft:#ecf1e6;
+    --walnut:#1f3d2b;
+    --walnut-deep:#171f19;
+    --oak:#4e7c4a;
+    --brass:#8fb573;
+    --brass-soft:#c9a227;
+    --line:#c9cfc2;
+    --line-dark:#2a3d2e;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -330,9 +330,8 @@
 
 <nav>
   <div class="wrap">
-    <div class="brand">CoreWood <span class="tag">CAD → CNC</span></div>
     <div class="navlinks">
-      <a href="#sobre">O que é</a>
+      <a href="#sobre">Sobre</a>
       <a href="#modulos">Módulos</a>
       <a href="#processo">Como funciona</a>
       <a href="#contato">Contato</a>
@@ -354,38 +353,38 @@
     <div class="hero-art">
       <svg viewBox="0 0 420 460" fill="none" xmlns="http://www.w3.org/2000/svg">
         <!-- painel principal -->
-        <rect class="draw-line" x="70" y="60" width="220" height="300" rx="2" stroke="#c9a866" stroke-width="1.6"/>
+        <rect class="draw-line" x="70" y="60" width="220" height="300" rx="2" stroke="#8fb573" stroke-width="1.6"/>
         <!-- entalhe/joint no canto -->
-        <path class="draw-line d2" d="M70 100 H50 V140 H70" stroke="#c9a866" stroke-width="1.6"/>
+        <path class="draw-line d2" d="M70 100 H50 V140 H70" stroke="#8fb573" stroke-width="1.6"/>
         <!-- linhas de cota -->
-        <path class="draw-line" d="M70 40 H290 M70 34 V46 M290 34 V46" stroke="#8a7350" stroke-width="1"/>
-        <text x="175" y="26" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#8a7350">L</text>
-        <path class="draw-line" d="M320 60 V360 M314 60 H326 M314 360 H326" stroke="#8a7350" stroke-width="1"/>
-        <text x="340" y="215" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#8a7350">A</text>
+        <path class="draw-line" d="M70 40 H290 M70 34 V46 M290 34 V46" stroke="#6b7267" stroke-width="1"/>
+        <text x="175" y="26" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#6b7267">L</text>
+        <path class="draw-line" d="M320 60 V360 M314 60 H326 M314 360 H326" stroke="#6b7267" stroke-width="1"/>
+        <text x="340" y="215" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#6b7267">A</text>
 
         <!-- toolpath tracejado conectando furos -->
-        <path class="draw-line d3" d="M110 110 L110 310 L250 310 L250 110" stroke="#a9823d" stroke-width="1.3" stroke-dasharray="5 6" fill="none" opacity="0.85"/>
+        <path class="draw-line d3" d="M110 110 L110 310 L250 310 L250 110" stroke="#c9a227" stroke-width="1.3" stroke-dasharray="5 6" fill="none" opacity="0.85"/>
 
         <!-- pontos de furação -->
         <g class="fade-pt" style="animation-delay:1.6s">
-          <circle cx="110" cy="110" r="5" stroke="#e8e0cd" stroke-width="1.3" fill="#241a10"/>
-          <path d="M104 110 H116 M110 104 V116" stroke="#e8e0cd" stroke-width="1"/>
+          <circle cx="110" cy="110" r="5" stroke="#ecf1e6" stroke-width="1.3" fill="#171f19"/>
+          <path d="M104 110 H116 M110 104 V116" stroke="#ecf1e6" stroke-width="1"/>
         </g>
         <g class="fade-pt" style="animation-delay:1.85s">
-          <circle cx="110" cy="310" r="5" stroke="#e8e0cd" stroke-width="1.3" fill="#241a10"/>
-          <path d="M104 310 H116 M110 304 V316" stroke="#e8e0cd" stroke-width="1"/>
+          <circle cx="110" cy="310" r="5" stroke="#ecf1e6" stroke-width="1.3" fill="#171f19"/>
+          <path d="M104 310 H116 M110 304 V316" stroke="#ecf1e6" stroke-width="1"/>
         </g>
         <g class="fade-pt" style="animation-delay:2.1s">
-          <circle cx="250" cy="310" r="5" stroke="#e8e0cd" stroke-width="1.3" fill="#241a10"/>
-          <path d="M244 310 H256 M250 304 V316" stroke="#e8e0cd" stroke-width="1"/>
+          <circle cx="250" cy="310" r="5" stroke="#ecf1e6" stroke-width="1.3" fill="#171f19"/>
+          <path d="M244 310 H256 M250 304 V316" stroke="#ecf1e6" stroke-width="1"/>
         </g>
         <g class="fade-pt" style="animation-delay:2.35s">
-          <circle cx="250" cy="110" r="5" stroke="#e8e0cd" stroke-width="1.3" fill="#241a10"/>
-          <path d="M244 110 H256 M250 104 V116" stroke="#e8e0cd" stroke-width="1"/>
+          <circle cx="250" cy="110" r="5" stroke="#ecf1e6" stroke-width="1.3" fill="#171f19"/>
+          <path d="M244 110 H256 M250 104 V116" stroke="#ecf1e6" stroke-width="1"/>
         </g>
 
-        <text x="70" y="400" font-family="JetBrains Mono" font-size="11" fill="#8a7350" letter-spacing="1">PROJETO&#8203;.STEP</text>
-        <text x="70" y="420" font-family="JetBrains Mono" font-size="11" fill="#5b4128" letter-spacing="1">ROTEIRO — EM PROCESSAMENTO</text>
+        <text x="70" y="400" font-family="JetBrains Mono" font-size="11" fill="#6b7267" letter-spacing="1">PROJETO&#8203;.STEP</text>
+        <text x="70" y="420" font-family="JetBrains Mono" font-size="11" fill="#4e7c4a" letter-spacing="1">ROTEIRO — EM PROCESSAMENTO</text>
       </svg>
     </div>
   </div>
@@ -394,7 +393,7 @@
 <section id="sobre">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="eyebrow">O que é</div>
+      <div class="eyebrow">Sobre</div>
       <h2>Uma camada de automação entre o projeto e a produção</h2>
       <p>Em vez de recriar roteiros, furações e arquivos de máquina peça por peça, o CoreWood organiza esse processo de ponta a ponta — do desenho técnico ao chão de fábrica, com as regras reais da linha de produção aplicadas de forma consistente.</p>
     </div>
